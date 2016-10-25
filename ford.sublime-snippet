@@ -1,0 +1,10 @@
+<snippet>
+	<description>for down an array</description>
+	<content><![CDATA[
+for (int ${1:i} = ${2:len - 1}; ${1:i} >= ${3:0}; ${1:i}--) {
+	${4:/* code */}
+}
+]]></content>
+	<tabTrigger>ford</tabTrigger>
+	<scope>source.c, source.objc, source.c++, source.objc++</scope>
+</snippet>

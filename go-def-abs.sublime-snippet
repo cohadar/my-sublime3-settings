@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+func abs(x int) int {
+	if x < 0 {
+		return -x
+	}
+	return x
+}
+]]></content>
+    <tabTrigger>defabs</tabTrigger>
+    <scope>source.go</scope>
+    <description>int abs function</description>
+</snippet>

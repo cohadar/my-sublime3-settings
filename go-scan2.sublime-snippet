@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+var ${1:a}, ${2:b} int
+fmt.Scan(&${1:a}, &${2:b})
+
+]]></content>
+    <tabTrigger>scan2</tabTrigger>
+    <scope>source.go</scope>
+    <description>scan two scalars</description>
+</snippet>

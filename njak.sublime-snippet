@@ -1,0 +1,11 @@
+<snippet>
+	<description>generic function snippet</description>
+	<content><![CDATA[
+${1:int} ${2:njak}(${3:void})
+{
+	${4:/* code */}
+}
+]]></content>
+	<tabTrigger>njak</tabTrigger>
+	<scope>source.c</scope>
+</snippet>

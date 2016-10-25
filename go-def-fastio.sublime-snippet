@@ -1,0 +1,34 @@
+<snippet>
+    <content><![CDATA[
+//=========================
+// FastIO
+//=========================
+type FastIO struct {
+	*bufio.Writer
+	scanner *bufio.Scanner
+}
+
+func NewFastIO() *FastIO {
+	ret := new(FastIO)
+	ret.scanner = bufio.NewScanner(os.Stdin)
+	ret.scanner.Split(bufio.ScanWords)	
+	ret.Writer = bufio.NewWriter(os.Stdout)
+	return ret
+}
+
+func (p *FastIO) NextInt() int {
+	p.scanner.Scan()
+	a, _ := strconv.ParseInt(p.scanner.Text(),10,64)
+	return int(a)
+}
+
+func (p *FastIO) NextInt64() int64 {
+	p.scanner.Scan()
+	a, _ := strconv.ParseInt(p.scanner.Text(),10,64)
+	return a
+}
+]]></content>
+    <tabTrigger>defFastIO</tabTrigger>
+    <scope>source.go</scope>
+    <description>fast input output</description>
+</snippet>

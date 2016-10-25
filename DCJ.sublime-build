@@ -1,0 +1,50 @@
+{
+	"cmd": ["javac", "-target" , "1.7", "-source", "1.7", "-bootclasspath", "/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/rt.jar", "-cp", ".:lib/*:../lib/*", "-Xlint:unchecked", "-Xlint:deprecation", "$file"],
+	"file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+	"selector": "source.java",
+
+	"variants":
+	[
+		{
+			"name": "Run1",
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh ${file} 1 10"]
+		},
+		{
+			"name": "Run2",
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh ${file} 2 10"]
+		},
+		{
+			"name": "Run3",
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh ${file} 3 10"]
+		},
+		{
+			"name": "Run4",
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh ${file} 4 10"]
+		},
+		{
+			"name": "Run5",
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh ${file} 5 10"]
+		},
+		{
+			"name": "Run6",
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh ${file} 1 100"]
+		},
+		{
+			"name": "Run7",
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh ${file} 2 100"]
+		},
+		{
+			"name": "Run8",
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh ${file} 3 100"]
+		},
+		{
+			"name": "Run9",
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh ${file} 4 100"]
+		},
+		{
+			"name": "Run0",
+			"cmd": ["bash", "-c", "/Users/cohadar/bin/java7_dcj.sh ${file} 5 100"]
+		}
+	]
+
+}

@@ -1,0 +1,5 @@
+{
+    "selector": "source.lua",
+    "cmd": ["/Users/cohadar/love-workspaces/love.app/Contents/MacOS/love", "${project_path:${file_path}}"],
+    "file_regex": "^Error: (?:[^:]+: )?([^: ]+?):(\\d+):() ([^:]*)$"
+}

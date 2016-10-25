@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+for ${1:y} := 0; ${1:y} < ${2:len(M)}; ${1:y}++ {
+	for ${3:x} := 0; ${3:x} < ${4:len(M[y])}; ${3:x}++ {
+		${5:/* code */}
+	}
+}
+
+]]></content>
+    <tabTrigger>foryx</tabTrigger>
+    <scope>source.go</scope>
+    <description>for y for x over a matrix</description>
+</snippet>

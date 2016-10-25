@@ -1,0 +1,9 @@
+# MacOSX stuff
+.DS_Store
+oscrypto-ca-bundle.crt
+
+# transient stuff
+.SublimeREPLHistory/
+
+# Package Control
+Package Control*

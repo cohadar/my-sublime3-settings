@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+var ${1:t} int
+fmt.Fscan(stdin, &${1:t})
+for i := 0; i < ${1:t}; i++ {
+	${2:/* scan code */}
+}
+]]></content>
+    <tabTrigger>scant</tabTrigger>
+    <scope>source.go</scope>
+    <description>scan t testcases</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+	<description>case statement</description>
+	<content><![CDATA[
+case ${1:constant}:
+	${2:/* code */}
+	break;
+]]></content>
+	<tabTrigger>case</tabTrigger>
+	<scope>source.c, source.objc, source.c++, source.objc++</scope>
+</snippet>

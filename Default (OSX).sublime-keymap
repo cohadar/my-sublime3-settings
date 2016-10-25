@@ -1,0 +1,14 @@
+[
+	{ "keys": ["super+1"], "command": "build", "args": {"variant": "Run1"} },
+	{ "keys": ["super+2"], "command": "build", "args": {"variant": "Run2"} },
+	{ "keys": ["super+3"], "command": "build", "args": {"variant": "Run3"} },
+	{ "keys": ["super+4"], "command": "build", "args": {"variant": "Run4"} },
+	{ "keys": ["super+5"], "command": "build", "args": {"variant": "Run5"} },
+	{ "keys": ["super+6"], "command": "build", "args": {"variant": "Run6"} },
+	{ "keys": ["super+7"], "command": "build", "args": {"variant": "Run7"} },
+	{ "keys": ["super+8"], "command": "build", "args": {"variant": "Run8"} },
+	{ "keys": ["super+9"], "command": "build", "args": {"variant": "Run9"} },
+	{ "keys": ["super+0"], "command": "build", "args": {"variant": "Run0"} },	
+	{ "keys": ["super+-"], "command": "build", "args": {"variant": "RunDecompiler"} },
+	{ "keys": ["super+="], "command": "build", "args": {"variant": "RunDecompilerVerbose"} }
+]

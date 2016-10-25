@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+M := make([][]int, n)
+for ${1:y} := 0; ${1:y} < ${2:len(M)}; ${1:y}++ {
+	M[y] = make([]int, n)
+	for ${3:x} := 0; ${3:x} < ${4:len(M[y])}; ${3:x}++ {
+		fmt.Fscan(stdin, &M[y][x])
+	}
+}
+
+]]></content>
+    <tabTrigger>scanyx</tabTrigger>
+    <scope>source.go</scope>
+    <description>scan matrix</description>
+</snippet>

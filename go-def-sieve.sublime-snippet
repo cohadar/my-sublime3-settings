@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[
+func sieve(n int) []bool {
+	sieve := make([]bool, n)
+	sieve[2] = true
+	for i := 3; i < n; i += 2 {
+		sieve[i] = true
+	}
+	for i := 2; i * i <= n; i++ {
+		if sieve[i] {
+			for j := i * i; j < n; j += i {
+				sieve[j] = false
+			}
+		}
+	}
+	return sieve
+}
+]]></content>
+    <tabTrigger>defSieve</tabTrigger>
+    <scope>source.go</scope>
+    <description>sieve of Erathostenes</description>
+</snippet>

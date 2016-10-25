@@ -1,0 +1,8 @@
+<snippet>
+	<description>malloc of an array</description>
+	<content><![CDATA[
+malloc(${1:size} * sizeof(*${2:array}))
+]]></content>
+	<tabTrigger>malloc</tabTrigger>
+	<scope>source.c</scope>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+${1:A} := make([]int, ${2:n})
+for i := 0; i < len(${1:A}); i++ {
+	fmt.Scan(&${1:A}[i])
+}
+
+]]></content>
+    <tabTrigger>scanarray</tabTrigger>
+    <scope>source.go</scope>
+    <description>scan an array</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+	<description>default statement</description>
+	<content><![CDATA[
+default:
+	${1:/* code */}
+]]></content>
+	<tabTrigger>default</tabTrigger>
+	<scope>source.c, source.objc, source.c++, source.objc++</scope>
+</snippet>

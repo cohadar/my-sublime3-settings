@@ -1,0 +1,6 @@
+[
+	{ "keys": ["ctrl+1"], "command": "build", "args": {"variant": "RunExamp"} },
+	{ "keys": ["ctrl+2"], "command": "build", "args": {"variant": "RunSmall"} },
+	{ "keys": ["ctrl+3"], "command": "build", "args": {"variant": "RunLarge"} },
+	{ "keys": ["ctrl+4"], "command": "build", "args": {"variant": "RunJunit"} }	
+]

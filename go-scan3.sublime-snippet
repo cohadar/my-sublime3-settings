@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+var ${1:a}, ${2:b}, ${3:c} int
+fmt.Scan(&${1:a}, &${2:b}, &${3:c})
+
+]]></content>
+    <tabTrigger>scan3</tabTrigger>
+    <scope>source.go</scope>
+    <description>scan three scalars</description>
+</snippet>

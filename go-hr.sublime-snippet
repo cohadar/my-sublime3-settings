@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+package main
+
+import "fmt"
+
+func main() {
+	$0
+}
+
+]]></content>
+    <tabTrigger>hr</tabTrigger>
+    <scope>source.go</scope>
+    <description>hackerrank go template</description>
+</snippet>
