@@ -10,5 +10,6 @@
 	{ "keys": ["super+9"], "command": "build", "args": {"variant": "Run9"} },
 	{ "keys": ["super+0"], "command": "build", "args": {"variant": "Run0"} },	
 	{ "keys": ["super+-"], "command": "build", "args": {"variant": "RunDecompiler"} },
-	{ "keys": ["super+="], "command": "build", "args": {"variant": "RunDecompilerVerbose"} }
+	{ "keys": ["super+="], "command": "build", "args": {"variant": "RunDecompilerVerbose"} },
+	{ "keys": ["super+`"], "command": "build", "args": {"variant": "goimports"} }
 ]

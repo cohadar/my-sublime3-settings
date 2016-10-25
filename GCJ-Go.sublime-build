@@ -1,10 +1,20 @@
 {
-	"cmd": ["go build '${file}'"],
+	"env":
+	{
+	    "PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/cohadar/bin/:/Users/cohadar/workspaces/goroot/bin:",
+	    "GOPATH":"/Users/cohadar/workspaces/goroot"
+	},
+
+	"cmd": ["go", "build", "${file}"],
     "selector": "source.go",
-    "shell": true,
 
 	"variants":
 	[
+		{
+			"name": "goimports",
+			"cmd": ["goimports", "-w", "${file}"],
+			"shell": false
+		},			
 		{
 			"name": "Run",
 			"cmd": ["go", "run", "${file}"],
