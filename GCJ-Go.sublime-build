@@ -21,6 +21,11 @@
 			"shell": false
 		},	
 		{
+			"name": "Test",
+			"cmd": ["go", "test", "${file}"],
+			"shell": false
+		},			
+		{
 			"name": "Run1",
 			"cmd": ["bash", "--login", "-c", "go_run_and_diff.sh ${file_base_name} 1"],
 			"shell": false
