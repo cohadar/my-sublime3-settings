@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+func Test${1:Njak}(t *testing.T) {
+	$0
+}
+]]></content>
+    <tabTrigger>test</tabTrigger>
+    <scope>source.go</scope>
+    <description>test function</description>
+</snippet>

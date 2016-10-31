@@ -1,49 +1,14 @@
 {
-	"cmd": ["bash", "-c", "chmod a+x $file"],
+	"cmd": ["chmod a+x '$file'"],
 	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
 	"selector": "source.shell",
+	"shell": true,
 
 	"variants":
 	[
 		{
 			"name": "Run",
-			"cmd": ["bash", "--login", "-c", "$file"]
-		},	
-		{
-			"name": "Run1",
-			"cmd": ["bash", "--login", "-c", "bash_run_and_diff.sh $file_base_name 1"]
-		},
-		{
-			"name": "Run2",
-			"cmd": ["bash", "--login", "-c", "bash_run_and_diff.sh $file_base_name 2"]
-		},
-		{
-			"name": "Run3",
-			"cmd": ["bash", "--login", "-c", "bash_run_and_diff.sh $file_base_name 3"]
-		},
-		{
-			"name": "Run4",
-			"cmd": ["bash", "--login", "-c", "bash_run_and_diff.sh $file_base_name 4"]
-		},
-		{
-			"name": "Run5",
-			"cmd": ["bash", "--login", "-c", "bash_run_and_diff.sh $file_base_name 5"]
-		},
-		{
-			"name": "Run6",
-			"cmd": ["bash", "--login", "-c", "bash_run_and_diff.sh $file_base_name 6"]
-		},
-		{
-			"name": "Run7",
-			"cmd": ["bash", "--login", "-c", "bash_run_and_diff.sh $file_base_name 7"]
-		},
-		{
-			"name": "Run8",
-			"cmd": ["bash", "--login", "-c", "bash_run_and_diff.sh $file_base_name 8"]
-		},
-		{
-			"name": "Run9",
-			"cmd": ["bash", "--login", "-c", "bash_run_and_diff.sh $file_base_name 9"]
+			"cmd": ["'$file'"]
 		}
 	]
 }
