@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+if err != nil {
+	$0
+}
+
+]]></content>
+    <tabTrigger>iferrnotnil</tabTrigger>
+    <scope>source.go</scope>
+    <description>if err not nil</description>
+</snippet>
