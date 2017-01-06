@@ -1,8 +1,8 @@
 {
 	"env":
 	{
-	    "PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/cohadar/bin/:/Users/cohadar/workspaces/goroot/bin:",
-	    "GOPATH":"/Users/cohadar/workspaces/goroot"
+	    "PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/cohadar/bin/:/Users/cohadar/workspaces/gopath/bin:",
+	    "GOPATH":"/Users/cohadar/workspaces/gopath"
 	},
 
 	"cmd": ["go", "build", "${file}"],
