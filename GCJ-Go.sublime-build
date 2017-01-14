@@ -5,7 +5,7 @@
 	    "GOPATH":"/Users/cohadar/workspaces/gopath"
 	},
 
-	"cmd": ["go", "build", "${file}"],
+	"cmd": ["go", "build", "."],
     "selector": "source.go",
 
 	"variants":
