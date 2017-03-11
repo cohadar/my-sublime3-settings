@@ -2,13 +2,11 @@
 	"cmd": ["chmod a+x '$file'"],
 	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
 	"selector": "source.shell",
-	"shell": true,
-
 	"variants":
 	[
 		{
 			"name": "Run",
-			"cmd": ["'$file'"]
+			"cmd": ["bash", "--login", "$file"]
 		}
 	]
 }
