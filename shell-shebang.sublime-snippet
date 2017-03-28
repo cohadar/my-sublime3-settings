@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+#!/usr/bin/env bash
+set -e
+set -u
+set -v
+
+printf "hello world!\n"
+
+]]></content>
+    <tabTrigger>shebang</tabTrigger>
+    <scope>source.shell</scope>
+    <description>shebang</description>
+</snippet>
