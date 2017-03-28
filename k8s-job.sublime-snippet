@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[
+apiVersion: batch/v1
+kind: Job
+metadata:
+    name: ${TM_FILENAME/([^\.]*).*/\1/}
+spec:
+  template:
+    metadata:
+      name: ${TM_FILENAME/([^\.]*).*/\1/}
+    spec:
+      restartPolicy: Never      
+      containers:
+      - name: ${TM_FILENAME/([^\.]*).*/\1/}
+        image: alpine
+        command: ["sh", "-c", "echo Hello World!"]
+
+]]></content>
+    <tabTrigger>k8skindjob</tabTrigger>
+    <scope>source.yaml</scope>
+    <description>kubernetes kind Job</description>
+</snippet>
