@@ -1,0 +1,35 @@
+<snippet>
+    <content><![CDATA[
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ${TM_FILENAME/([^\.]*).*/\1/}
+spec:
+  tls:
+  - secretName: dev.tda.link
+    hosts:
+    - ${1:${TM_FILENAME/([^\.]*).*/\1/}}.dev.tda.link    
+  - secretName: prod.tda.link
+    hosts:    
+    - ${1:${TM_FILENAME/([^\.]*).*/\1/}}.prod.tda.link
+  rules:  
+  - host: ${1:${TM_FILENAME/([^\.]*).*/\1/}}.dev.tda.link
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: ${TM_FILENAME/([^\.]*).*/\1/}
+          servicePort: 80
+  - host: ${1:${TM_FILENAME/([^\.]*).*/\1/}}.prod.tda.link
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: ${TM_FILENAME/([^\.]*).*/\1/}
+          servicePort: 80
+
+]]></content>
+    <tabTrigger>k8skindingress</tabTrigger>
+    <scope>source.yaml</scope>
+    <description>kubernetes kind ingress</description>
+</snippet>
