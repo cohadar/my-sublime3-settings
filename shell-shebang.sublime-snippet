@@ -3,7 +3,14 @@
 #!/usr/bin/env bash
 set -e
 set -u
-set -v
+
+exit_trap() {
+	exit_code=\$?
+	if [ "\$exit_code" != "0" ]; then
+		echo "\$0: line \$1: exit code \$exit_code"
+	fi
+}
+trap 'exit_trap \$LINENO' EXIT
 
 printf "hello world!\n"
 

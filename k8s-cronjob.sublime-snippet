@@ -1,0 +1,27 @@
+<snippet>
+    <content><![CDATA[
+apiVersion: batch/v2alpha1
+kind: CronJob
+metadata:
+  name: ${TM_FILENAME/([^\.]*).*/\1/}
+spec:
+  schedule: '*/1 * * * *' # every minute
+  #schedule: '0 0 * * 0' # every sunday on midnight
+  #schedule: '0 6 1 * *' # every 1st of month at 6am  
+  suspend: false
+  concurrencyPolicy: Forbid
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: Never          
+          containers:
+          - name: ${TM_FILENAME/([^\.]*).*/\1/}
+            image: alpine
+            command: ["sh", "-c", "echo Hello World!"]
+
+]]></content>
+    <tabTrigger>k8skindcronjob</tabTrigger>
+    <scope>source.yaml</scope>
+    <description>kubernetes kind CronJob</description>
+</snippet>

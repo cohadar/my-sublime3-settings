@@ -3,11 +3,10 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-    name: ${TM_FILENAME/([^\.]*).*/\1/}-job
+    # manually increase counter and do: kubectl create -f ${TM_FILENAME/([^\.]*).*/\1/}.job.yaml
+    name: ${TM_FILENAME/([^\.]*).*/\1/}-001
 spec:
   template:
-    metadata:
-      name: ${TM_FILENAME/([^\.]*).*/\1/}-job
     spec:
       restartPolicy: Never      
       containers:
