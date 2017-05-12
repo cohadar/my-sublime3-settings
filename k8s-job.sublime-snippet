@@ -4,6 +4,7 @@ apiVersion: batch/v1
 kind: Job
 metadata:
     # manually increase counter and do: kubectl create -f ${TM_FILENAME/([^\.]*).*/\1/}.job.yaml
+    namespace: ${1:default}
     name: ${TM_FILENAME/([^\.]*).*/\1/}-001
 spec:
   template:

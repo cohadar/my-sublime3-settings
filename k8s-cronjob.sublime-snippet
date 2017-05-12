@@ -3,6 +3,7 @@
 apiVersion: batch/v2alpha1
 kind: CronJob
 metadata:
+  namespace: ${1:default}
   name: ${TM_FILENAME/([^\.]*).*/\1/}
 spec:
   schedule: '*/1 * * * *' # every minute

@@ -3,6 +3,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
+  namespace: ${1:default}
   name: ${TM_FILENAME/([^\.]*).*/\1/}
 spec:
   replicas: 1
@@ -16,7 +17,7 @@ spec:
         image: 839997660733.dkr.ecr.eu-central-1.amazonaws.com/tda-services/${TM_FILENAME/([^\.]*).*/\1/}:0.0.1-snapshot
         imagePullPolicy: Always
         ports:
-        - containerPort: 8080
+        - containerPort: ${2:8080}
 
 ]]></content>
     <tabTrigger>k8skinddeployment</tabTrigger>
