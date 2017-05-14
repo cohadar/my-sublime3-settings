@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+#include <stdio.h>
+]]></content>
+    <tabTrigger>include stdio.h printf</tabTrigger>
+    <scope>source.c</scope>
+    <description>stdio.h</description>
+</snippet>

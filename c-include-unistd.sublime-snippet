@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+#include <unistd.h>
+]]></content>
+    <tabTrigger>include unistd.h read write</tabTrigger>
+    <scope>source.c</scope>
+    <description>unistd.h</description>
+</snippet>

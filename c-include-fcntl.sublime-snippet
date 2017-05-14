@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+#include <fcntl.h>
+]]></content>
+    <tabTrigger>include fcntl.h open creat</tabTrigger>
+    <scope>source.c</scope>
+    <description>fcntl.h</description>
+</snippet>
